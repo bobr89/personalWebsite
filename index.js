@@ -1,98 +1,51 @@
-/*$(document).ready(function(){
+var main = function(){
 
-			$("#banner").css({"height":$(window).height() + "px"});
+	$(".icon-menu").click(function(){
+		$(".menu").animate({
+			right: "0px"
+		}, 200);
+	});
 
-			var flag = false;
-			var scroll;
+	$(".icon-close").click(function(){
+		$(".menu").animate({
+			right: "-300px"
+		}, 200);
+	});
 
-			$(window).scroll(function(){
-				scroll = $(window).scrollTop();
+	$(".menu").click(function(){
+		$(".menu").animate({
+			right: "-300px"
+		}, 200);
+	});
 
-					if(scroll > 40){
-						if(!flag){
-						$("#logo").css({"margin-top": "-27px", "width": "150px", "height": "150px"});
+	$(".button").click(function(){
+		$("html body").animate({
+			scrollTop: $("#introSection").offset().top
+		}, 1000);
+	});
 
-						$("header").css({"background-color": "#3C3C3C"});
-						flag = true;
-						}
-					}
+	setBindings();
 
-					else {
-						if(flag){
-						$("#logo").css({"margin-top": "70px", "width": "849px", "height": "849px"});
+	function setBindings(){
+		$("nav a").click(function(e){
+			e.preventDefault();
+			var sectionID = e.currentTarget.id + "Section";
 
-						$("header").css({"background-color": "transparent"});
-						flag = false;
-					}
-				}
-			});
+			$("html body").animate({
+				scrollTop: $("#" + sectionID).offset().top
+			}, 1000)
+		})
+	}
 
-			/*Menu*/
+	// squaresend global parameters
+	sqs_css = ".wrap { font-family:Georgia } "
+	sqs_title = "<img src='//i.imgur.com/KkxSdlp.png'>Keep In Touch"
+	sqs_label_submit = "Send Message"
+	sqs_label_message = "Details"
+	sqs_label_subject = "What position are you seeking?"
+	sqs_placeholder_name = "Provide your full name"
+	sqs_placeholder_message = "A description of your relevant background and interests."
 
-			$('.icon-menu').click(function(){
-				$('.menu').animate({
-					left: "0px"
-				}, 200);
+}
 
-				$('body').animate({
-					left: "285px"
-				}, 200);
-			});
-
-			$('.icon-close').click(function(){
-				$('.menu').animate({
-					left: "-285px"
-				}, 200);
-
-				$('body').animate({
-					left: "0px"
-				}, 200);
-			});
-
-			/*var scroll1; 
-			$(window).scroll(function(){
-				scroll1 = $(window).scrollTop();
-
-					if(scroll1 > 450){
-						$(".about").animate({'opacity':'1'});
-					}
-			});
-
-			var scroll2;
-			$(window).scroll(function(){
-				scroll2 = $(window).scrollTop();
-
-					if(scroll2 > 1050){
-						$(".content2").animate({'opacity':'1'});
-					}
-			});
-
-			var scroll3;
-			$(window).scroll(function(){
-				scroll3 = $(window).scrollTop();
-
-					if(scroll3 > 1850){
-						$(".content3").animate({'opacity':'1'});
-					}
-			});
-
-			var flag1 = false;
-			var scroll4;
-			$(window).scroll(function(){
-				scroll4 = $(window).scrollTop();
-
-					if(scroll > 3250){
-						if(!flag1){
-						$("header").css({"background-color": "transparent"});
-						flag1 = true;
-						}
-					}
-					else {
-						if(flag1){
-						$("header").css({"background-color": "#3C3C3C"});
-						flag1 = false;
-					}
-				}
-			});
-
-		});*/
+$(document).ready(main);

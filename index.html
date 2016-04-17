@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="eng">
+<!DOCTYPE HTML>
+
+<html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Website</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 		<link rel="stylesheet" href="style.css">
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -14,77 +15,232 @@
 
 	<body>
 		<header>
-			<nav>
-				<div class="left">
-					<ul>
-						<a href='#content1'><li>About</li></a>
-						<a href='#content2'><li>Experience</li></a>
-						<a href='#content3'><li>Projects</li></a>
-					</ul> 
+			<nav class="menu">
+				<div class="icon-close">
+					<img src="pictures/close.png">
 				</div>
 
-					<img id='logo' src='pictures/l.png'>
-
-				<div class="right">
-					<ul>
-						<a href='https://ca.linkedin.com/in/brian-king-hei-chan-138b88112'><li>LinkedIn</li></a>
-						<a href='https://github.com/bobr89'><li>GitHub</li></a>
-						<a href='#content4'><li>Get In Touch</li></a>
-					</ul>
-				</div>
+				<ul>
+					<li><a href="#introSection" id="intro">Introduction</a></li>
+					<li><a href="#featuresSection" id="features">My Work</a></li>
+					<li><a href="#portfolioSection" id="portfolio">Portfolio</a></li>
+					<li><a href="#contactSection" id="contact">Keep in touch</a></li>
+				</ul>
 			</nav>
 
-			<div class="menu">
+			<section id="hero" class="hero">
+				<div class="container">
 
-				<div class="icon-close">
-					<img src="pictures/x.png">
-				</div>
+					<div class="icon-menu">
+						<img src="pictures/menuIcon.png">
+					</div>
 
-	  			<!-- Menu -->
-				<ul>
-					<li><a href='#content1'>About</a></li>
-					<li><a href='#content2'>Experience</a></li>
-					<li><a href='#content3'>Projects</a></li>
-					<li><a href='https://ca.linkedin.com/in/brian-king-hei-chan-138b88112'>LinkedIn</a></li>
-					<li><a href='https://github.com/bobr89'>GitHub</a></li>
-					<li><a href='#content4'>Get In Touch</a></li>
-				</ul>
-		
-			</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center all-cap name">
+							<h1>Brian Chan</h1>
+						</div>
+					</div>
 
-			<div class="jumbotron">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center ece">
+							<p>University of Waterloo </p>
+						</div>
+					</div>
 
-				<div class="icon-menu">
-					<img src="pictures/m2.png">
-				</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center ece">
+							<p>@Computer Engineering</p>
+						</div>
+					</div>
 
-		</header>
-
-		<section class="main" id="main">
-
-			<!--<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h1>Nice to meet you</h1>
-	       	  		    <pre>I love coding and I am passion in what I do. 
-	I studies computer engineering in University of Waterloo. 
-	I also love talking to people!</pre>
-	       	   			<br></br>
-	       	  			<p>In the last coop term, I worked for Agriculture and Agri-Food Canada where I developed a statistic anaylsis program which hugely increase the efficiency of the position.</p>
-
-
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<a class="button" href="#introSection">Greeting!</a>
+						</div>
 					</div>
 				</div>
-			</div>-->
+			</section>
+		</header>
+
+		<section id="introSection" class="text-center section-padding">
+			<div class="container">
+				<div class="col-md-8 col-md-offset-2">
+					<h1 class="arrow">Nice to meet you!</h1>
+					<p>
+						I love coding and I am passion in what I do.
+						I studies computer engineering in University of Waterloo.
+						I also love talking to people!
+					</p>
+					<p>
+						In the last coop term, I worked for Agriculture and Agri-Food Canada where I developed a statistic anaylsis program which hugely increase the efficiency of the position.
+					</p>
+				</div>
+			</div>
 		</section>
 
+		<section id="featuresSection" class="features text-center section-padding grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
 
+						<h1 class="arrow">My Work</h1>
 
-		
+						<div class="wrapper">
+							<div class="col-md-4 col-xs-12 img-responsive">
+								<a href="">
+									<div class="icon">
+										<img src="pictures/resumeIcon.png" width="200px" height="200px">
+									</div>
+								</a>
+
+								<h2 class="iconTitle">
+									<a href="">Resume</a>
+								</h2>
+							</div>
+
+							<div class="col-md-4 col-xs-12 img-responsive">
+								<a href="https://github.com/bobr89">
+									<div class="icon">
+										<img src="pictures/githubIconStarWars.png" width="200px" height="200px">
+									</div>
+								</a>
+
+								<h2 class="iconTitle">
+									<a href="https://github.com/bobr89">GitHub</a>
+								</h2>
+							</div>
+
+							<div class="col-md-4 col-xs-12 img-responsive">
+								<a href="#portfolio">
+									<div class="icon">
+										<img src="pictures/codeIcon.png" width="200px" height="200px">
+									</div>
+								</a>
+
+								<h2 class="iconTitle">
+									<a href="#portfolio">Projects</a>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolioSection" class="portfolio text-center section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="portfolio">
+						<div class="col-md-12">
+							<h1 class="arrow">Portfolio</h1>
+
+							<div class="col-md-4 col-xs-12">
+								<div class="effect"> 
+									<div class="project">
+										<img src="pictures/personalWebsiteThumbnail.png" width="350px" height="350px"></img>
+									</div>
+								</div>
+								<div class="projectTitle">
+									<h1>Personal Website</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<div class="effect"> 
+									<div class="project">
+										<img src="pictures/moviesHereThumbnail.png" width="350px" height="350px"></img>
+									</div>
+								</div>
+								<div class="projectTitle">
+									<h1>Personal Website</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<div class="effect"> 
+									<div class="project">
+										<img src="pictures/statDatabase.png" width="350px" height="350px"></img>
+									</div>
+								</div>
+								<div class="projectTitle">
+									<h1>Personal Website</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<div class="effect"> 
+									<div class="project">
+										<img src="pictures/statAnalysisThumbnail.png" width="350px" height="350px"></img>
+									</div>
+								</div>
+								<div class="projectTitle">
+									<h1>Personal Website</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<div class="effect"> 
+									<div class="project">
+										<img src="pictures/pongThumbnail.png" width="350px" height="350px"></img>
+									</div>
+								</div>
+								<div class="projectTitle">
+									<h1>Personal Website</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<div class="effect"> 
+									<div class="project">
+										<img src="pictures/comingSoon.png" width="350px" height="350px"></img>
+									</div>
+								</div>
+								<div class="projectTitle">
+									<h1>Personal Website</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="parallaxSection" class="parallax">
+			<div class="container">
+				<div class="row">
+					<div class="parallax-inner text-center">
+						<h1 class="quote all-cap col-xs-12">It's not who I am underneath but what I do that defines me.</h1>
+						<p class="author">Christian Bale</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contactSection" class="contact background text-center section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="all-cap col-md-4 col-md-offset-4">
+						<a href="mailto:brianchanuniversity@gamil.com" class="contact-box">email me</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="grey">
+			<div class="container">
+				<div class="row">
+					<div class ="credit">
+						2016 Brian Chan
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="jQuery/jquery-1.12.0.min.js"></script>
 		<script src="http://squaresend.com/squaresend.js"></script>
 		<script src="index.js"></script>
 	</body>
