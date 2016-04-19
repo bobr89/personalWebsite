@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>website</title>
+		<title>Brian Chan Website</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 		<link rel="stylesheet" href="style.css">
 		<!-- Latest compiled and minified CSS -->
@@ -32,7 +31,7 @@
 				<div class="container">
 
 					<div class="icon-menu">
-						<img src="pictures/menuIcon.png">
+						<img id="menuIcon" src="pictures/menuIcon.png">
 					</div>
 
 					<div class="row">
@@ -69,6 +68,8 @@
 					<p>
 						I love coding and I am passion in what I do.
 						I studies computer engineering in University of Waterloo.
+					</p>
+					<p>
 						I also love talking to people!
 					</p>
 					<p>
@@ -111,14 +112,14 @@
 							</div>
 
 							<div class="col-md-4 col-xs-12 img-responsive">
-								<a href="#portfolio">
+								<a href="#portfolioSection">
 									<div class="icon">
-										<img src="pictures/codeIcon.png" width="200px" height="200px">
+										<img class="projectJump" src="pictures/codeIcon.png" width="200px" height="200px">
 									</div>
 								</a>
 
 								<h2 class="iconTitle">
-									<a href="#portfolio">Projects</a>
+									<a class="projectJump" href="#portfolioSection">Projects</a>
 								</h2>
 							</div>
 						</div>
@@ -137,66 +138,84 @@
 							<div class="col-md-4 col-xs-12">
 								<div class="effect"> 
 									<div class="project">
-										<img src="pictures/personalWebsiteThumbnail.png" width="350px" height="350px"></img>
+										<img src="pictures/personalWebsiteThumbnail.png" width="300px" height="300px"></img>
 									</div>
 								</div>
-								<div class="projectTitle">
-									<h1>Personal Website</h1>
+								<div>
+									<h1 class="projectTitle">
+										Personal Website
+									</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<a href="http://bobr89.github.io/Movies-HereWebsite">
+									<div class="effect"> 
+										<div class="project">
+											<img src="pictures/moviesHereThumbnail.png" width="300px" height="300px"></img>
+										</div>
+									</div>
+								</a>
+								<div>
+									<h1 class="projectTitle">
+										<a href="http://bobr89.github.io/Movies-HereWebsite">Movies' Here Website</a>
+									</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<a href="https://github.com/bobr89/StatisticReportDatabase">
+									<div class="effect"> 
+										<div class="project">
+											<img src="pictures/statDatabase.png" width="300px" height="300px"></img>
+										</div>
+									</div>
+								</a>
+								<div>
+									<h1 class="projectTitle">
+										<a href="https://github.com/bobr89/StatisticReportDatabase">Statistic Report Database</a>
+									</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<a href="https://github.com/bobr89/Statistical-Analysis-Algorithum">
+									<div class="effect"> 
+										<div class="project">
+											<img src="pictures/statAnalysisThumbnail.png" width="300px" height="300px"></img>
+										</div>
+									</div>
+								</a>
+								<div>
+									<h1 class="projectTitle">
+										<a href="https://github.com/bobr89/Statistical-Analysis-Algorithum">Statistic Analysis Algorithm</a>
+									</h1>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-xs-12">
+								<a href="game.html">
+									<div class="effect"> 
+										<div class="project">
+											<img src="pictures/pongThumbnail.png" width="300px" height="300px"></img>
+										</div>
+									</div>
+								</a>
+								<div>
+									<h1 class="projectTitle">
+										<a href="game.html">Pong Game</a>
+									</h1>
 								</div>
 							</div>
 
 							<div class="col-md-4 col-xs-12">
 								<div class="effect"> 
 									<div class="project">
-										<img src="pictures/moviesHereThumbnail.png" width="350px" height="350px"></img>
+										<img src="pictures/comingSoon.jpg" width="300px" height="300px"></img>
 									</div>
 								</div>
 								<div class="projectTitle">
-									<h1>Personal Website</h1>
-								</div>
-							</div>
-
-							<div class="col-md-4 col-xs-12">
-								<div class="effect"> 
-									<div class="project">
-										<img src="pictures/statDatabase.png" width="350px" height="350px"></img>
-									</div>
-								</div>
-								<div class="projectTitle">
-									<h1>Personal Website</h1>
-								</div>
-							</div>
-
-							<div class="col-md-4 col-xs-12">
-								<div class="effect"> 
-									<div class="project">
-										<img src="pictures/statAnalysisThumbnail.png" width="350px" height="350px"></img>
-									</div>
-								</div>
-								<div class="projectTitle">
-									<h1>Personal Website</h1>
-								</div>
-							</div>
-
-							<div class="col-md-4 col-xs-12">
-								<div class="effect"> 
-									<div class="project">
-										<img src="pictures/pongThumbnail.png" width="350px" height="350px"></img>
-									</div>
-								</div>
-								<div class="projectTitle">
-									<h1>Personal Website</h1>
-								</div>
-							</div>
-
-							<div class="col-md-4 col-xs-12">
-								<div class="effect"> 
-									<div class="project">
-										<img src="pictures/comingSoon.png" width="350px" height="350px"></img>
-									</div>
-								</div>
-								<div class="projectTitle">
-									<h1>Personal Website</h1>
+									<h1></h1>
 								</div>
 							</div>
 						</div>
@@ -219,7 +238,7 @@
 		<section id="contactSection" class="contact background text-center section-padding">
 			<div class="container">
 				<div class="row">
-					<div class="all-cap col-md-4 col-md-offset-4">
+					<div class="all-cap col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
 						<a href="mailto:brianchanuniversity@gamil.com" class="contact-box">email me</a>
 					</div>
 				</div>

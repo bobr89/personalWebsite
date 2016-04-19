@@ -4,24 +4,44 @@ var main = function(){
 		$(".menu").animate({
 			right: "0px"
 		}, 200);
+
+		$("body").animate({
+			right: "250px"
+		}, 200);
 	});
 
 	$(".icon-close").click(function(){
 		$(".menu").animate({
-			right: "-300px"
+			right: "-250px"
+		}, 200);
+
+		$("body").animate({
+			right: "0px"
 		}, 200);
 	});
 
-	$(".menu").click(function(){
+	$(".menu").mouseleave(function(){
 		$(".menu").animate({
-			right: "-300px"
+			right: "-250px"
+		}, 200);
+
+		$("body").animate({
+			right: "0px"
 		}, 200);
 	});
 
-	$(".button").click(function(){
+	$(".button").click(function(e){
+		e.preventDefault();
 		$("html body").animate({
 			scrollTop: $("#introSection").offset().top
-		}, 1000);
+		}, 800);
+	});
+
+	$(".projectJump").click(function(e){
+		e.preventDefault();
+		$("html body").animate({
+			scrollTop: $("#portfolioSection").offset().top
+		}, 800);
 	});
 
 	setBindings();
@@ -33,7 +53,7 @@ var main = function(){
 
 			$("html body").animate({
 				scrollTop: $("#" + sectionID).offset().top
-			}, 1000)
+			}, 800);
 		})
 	}
 
@@ -46,6 +66,6 @@ var main = function(){
 	sqs_placeholder_name = "Provide your full name"
 	sqs_placeholder_message = "A description of your relevant background and interests."
 
-}
+};
 
 $(document).ready(main);

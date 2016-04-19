@@ -7,6 +7,7 @@
 body{
 	right: 0;
 	color: #fff;
+	position: relative;
 }
 
 ul{
@@ -22,23 +23,104 @@ ul{
 	display: block;
 }
 
-a:link{
-	color: #888;
+#intro:link{
+	color: #fff;
 	text-decoration: none;
 }
 
-a:active{
-	color: #888;
+#intro:visited{
+	color: #fff;
 	text-decoration: none;
 }
 
-a:visited{
-	color: #888;
+#intro:hover{
+	color: #00CCFF;
 	text-decoration: none;
 }
+
+#intro:active{
+	color: #fff;
+	text-decoration: none;
+}
+
+#features:link{
+	color: #fff;
+	text-decoration: none;
+}
+
+#features:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+#features:hover{
+	color: #00CCFF;
+	text-decoration: none;
+}
+
+#features:active{
+	color: #fff;
+	text-decoration: none;
+}
+
+#portfolio:link{
+	color: #fff;
+	text-decoration: none;
+}
+
+#portfolio:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+#portfolio:hover{
+	color: #00CCFF;
+	text-decoration: none;
+}
+
+#portfolio:active{
+	color: #fff;
+	text-decoration: none;
+}
+
+#contact:link{
+	color: #fff;
+	text-decoration: none;
+}
+
+#contact:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+#contact:hover{
+	color: #00CCFF;
+	text-decoration: none;
+}
+
+#contact:active{
+	color: #fff;
+	text-decoration: none;
+}
+
+.button:link{
+	color: #fff;
+	text-decoration: none;
+}
+
+.button:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
 
 .button:hover{
-	color: #888;
+	color: #00CCFF;
+	text-decoration: none;
+}
+
+.button:active{
+	color: #00CCFF;
 	text-decoration: none;
 }
 
@@ -46,17 +128,31 @@ a:visited{
 	padding-bottom: 30px;
 }
 
-.iconTitle a:hover{
+.iconTitle a:link{
 	color:#888;
 	text-decoration: none;
 }
 
+.iconTitle a:visited{
+	color:#888;
+	text-decoration: none;
+}
+
+.iconTitle a:hover{
+	color:#00CCFF;
+	text-decoration: none;
+}
+
+.iconTitle a:active{
+	color:#00CCFF;
+	text-decoration: none;
+}
 
 .menu{
 	background: #333;
 	position: fixed;
-	right: -300px;
-	width: 300px;
+	right: -250px;
+	width: 250px;
 	height: 100%
 }
 
@@ -67,14 +163,14 @@ a:visited{
 }
 
 .menu ul{
-	border-top: 1px solid #636366;
+	/*border-top: 1px solid #636366;*/
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 .menu li {
-  border-bottom: 1px solid #636366;
+  /*border-bottom: 1px solid #636366;*/
   font-family: 'Open Sans', sans-serif;
   line-height: 45px;
   padding-bottom: 3px;
@@ -91,7 +187,6 @@ a:visited{
 
 .icon-menu{
 	color: #333;
-	cursor: pointer;
 	float: right;
 	padding-right: 25px;
 	padding-top: 100px;
@@ -99,10 +194,10 @@ a:visited{
 	text-transform: uppercase;
 }
 
-.icon-menu i{
-	margin-right: 5px;
-}
+#menuIcon{
+	cursor: pointer;
 
+}
 
 .hero{
 	background: url("pictures/HongKong.jpg") no-repeat center center;
@@ -128,7 +223,7 @@ a:visited{
 	font-size: 50px;
 	font-weight: 200;
 	letter-spacing: -.02em;
-	font-family:;
+	font-family: ;
 }
 
 .ece p{
@@ -182,8 +277,28 @@ h1.arrow{
 }
 
 .projectTitle{
-	color: #333;
-	font-size: 15px;
+	color: #888;
+	font-size: 20px;
+}
+
+.projectTitle a:link{
+	color: #888;
+	text-decoration: none;
+}
+
+.projectTitle a:visited{
+	color: #888;
+	text-decoration: none;
+}
+
+.projectTitle a:hover{
+	color: #00CCFF;
+	text-decoration: none;
+}
+
+.projectTitle a:active{
+	color: #00CCFF;
+	text-decoration: none;
 }
 
 /*quote*/
@@ -232,10 +347,35 @@ h1.arrow{
 	border: solid 1px #fff;
 }
 
+.contact-box:link{
+	color: #fff;
+	text-decoration: none;
+	border: solid 1px #fff;
+}
+
+.contact-box:visited{
+	color: #fff;
+	text-decoration: none;
+	border: solid 1px #fff;
+}
+
+.contact-box:hover{
+	color: #00CCFF;
+	text-decoration: none;
+	border: solid 1px #00CCFF;
+}
+
+.contact-box:active{
+	color: #00CCFF;
+	text-decoration: none;
+	border: solid 1px #00CCFF;
+}
+
 footer{
 	padding: 20px 0 20px;
 }
 
 .credit{
 	float: right;
+	padding-right: 15px;
 }
