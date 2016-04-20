@@ -265,6 +265,12 @@ ul{
 	text-transform: uppercase;
 }
 
+@media screen and (max-width: 760px){
+	.icon-menu{
+		padding-top: 10vh;
+	}
+}
+
 #menuIcon{
 	cursor: pointer;
 
@@ -295,6 +301,12 @@ ul{
 	font-weight: 200;
 	letter-spacing: -.02em;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 760px){
+	.name h1{
+		padding-top: 20vh;
+	}
 }
 
 .ece{
