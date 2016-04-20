@@ -392,19 +392,6 @@ h1.arrow{
 	transition: 0.3s;
 }
 
-@media screen and (max-width: 1024px){
-	.project img{
-		padding-right: 10px;
-	}
-}
-
-@media screen and (max-width: 1024px){
-	.project img:hover{
-		box-shadow: 0 0 30px #fff;
-		transition: 0.3s;
-	}
-}
-
 .project img:hover{
 	box-shadow: 0 0 30px #99CCFF;
 	transition: 0.3s;
