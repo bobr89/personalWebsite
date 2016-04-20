@@ -388,9 +388,15 @@ h1.arrow{
 }
 
 .project img{
-	padding-right: 10px;
 	box-shadow: 0 0 0 #99CCFF;
 	transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px){
+	.project img{
+		padding-right: 10px;
+		margin-right: 10px;
+	}
 }
 
 .project img:hover{
