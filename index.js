@@ -59,7 +59,7 @@ var main = function(){
 
 	// squaresend global parameters
 	sqs_css = ".wrap { font-family:Georgia } "
-	sqs_title = "<img src='//i.imgur.com/KkxSdlp.png'>Keep In Touch"
+	sqs_title = "Keep In Touch"
 	sqs_label_submit = "Send Message"
 	sqs_label_message = "Details"
 	sqs_label_subject = "What position are you seeking?"
