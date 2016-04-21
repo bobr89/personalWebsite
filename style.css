@@ -397,6 +397,15 @@ h1.arrow{
 	transition: 0.3s;
 }
 
+@media screen and (max-width: 1024px){
+	.project img{
+		padding-right: 10px;
+	}
+	.project img:hover{
+		box-shadow: 0 0 0px white;
+	}
+}
+
 .projectTitle{
 	color: #888;
 	font-size: 20px;
