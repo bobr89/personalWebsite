@@ -1,4 +1,4 @@
-var main = function(){
+$(document).ready(function(){ 
 
 	$(".icon-menu").click(function(){
 		$(".menu").animate({
@@ -57,7 +57,46 @@ var main = function(){
 		})
 	}
 
-	// squaresend global parameters
+	// Auto Animation
+
+	$(".fadeInOnload").hide().fadeIn(800);
+
+	$(".fadeInOnloadUp").animate({
+		top: "15px"
+	}, 800);
+	
+	$(window).scroll(function(){
+		$(".h").each(function(i){
+
+			var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).innerHeight();
+
+			if (bottom_of_window > bottom_of_object){
+				$(this).fadeTo(400,1);
+			}
+		});
+	});
+
+	/*$(window).click(function(){
+		for(i = 1; i < 7; i++){
+			document.getElementById("project" + i.toString()).css("opacity":"1");
+		}
+	});*/
+
+	$(window).scroll(function(){
+		$(".h2").each(function(j){
+
+			var middle_of_object = $(this).offset().top + $(this).outerHeight()/2;
+			var bottom_of_window = $(window).scrollTop() + $(window).innerHeight();
+			var n = 1;
+
+			if (bottom_of_window > middle_of_object){
+				$(this).fadeTo(500,1);
+			}
+		});
+	});
+
+	// scroll global parameters
 	sqs_css = ".wrap { font-family:Georgia } "
 	sqs_title = "Keep In Touch"
 	sqs_label_submit = "Send Message"
@@ -66,6 +105,4 @@ var main = function(){
 	sqs_placeholder_name = "Provide your full name"
 	sqs_placeholder_message = "A description of your relevant background and interests."
 
-};
-
-$(document).ready(main);
+});
