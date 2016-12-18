@@ -149,7 +149,7 @@ ul{
 
 #menuIcon:hover{
 	color: #fff;
-	box-shadow: 0 0 20px #333;
+	box-shadow: 0 0 20px #555;
 	text-decoration: none;
 	transition: 0.3s;
 }
@@ -247,11 +247,17 @@ ul{
   padding-bottom: 3px;
   padding-left: 20px;
   padding-top: 3px;
+
+  position: relative;
+  transform: translateX(-20px);
+  transition: 0.3s; 
+  -webkit-transition-timing-function: ease-in-out;
 }
 
 .menu a{
 	color: #fff;
 	font-size: 15px;
+	padding-left: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -440,7 +446,7 @@ h1.arrow{
 /*quote*/
 
 .parallax{
-	background: url("pictures/parallax.jpg") no-repeat center center;
+	background: url("pictures/m.jpg") no-repeat center center;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
